@@ -1,7 +1,7 @@
 
 function renderRectangle(rectangle) {
     return `
-        <div class="text-center mt-5">
+        <div class="text-center mt-5" style="width:${rectangle.width}px;height:${rectangle.height}px;background-color:${rectangle.color};">
             <code>${JSON.stringify(rectangle)}</code>
         </div>
     `
