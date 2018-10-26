@@ -1,10 +1,22 @@
 
 function renderNametags(nametags) {
-    return `
-        <div class="text-center mt-5">
-            <code>${JSON.stringify(nametags)}</code>
-        </div>
-    `
+  
+    var nametagsHTML = nametags.map(function (name){
+        var nametagsHTML = `
+            <div class="card" style="width: 18rem; margin:20px; box-shadow: 5px 5px rgba(99,99,99,0.3)">
+                <div style="background-color:blue; color:white; text-align: center;">
+                    <h3>Hello, my name is:</h3>
+                </div>
+                <div class="card-body"; style="text-align: center;">
+                    <h3>${name}</h3>
+                </div>
+            </div>
+            `
+        return nametagsHTML
+    })
+    
+    return nametagsHTML.join('')
+
 }
 
 function nametags() {
