@@ -3,7 +3,7 @@ function renderNametags(nametags) {
   
     var nametagsHTML = nametags.map(function (name){
         var nametagsHTML = `
-            <div class="card" style="width: 18rem; margin:20px; box-shadow: 5px 5px rgba(99,99,99,0.3)">
+            <div class="card" style="width: 18rem; margin:20px; box-shadow: 5px 5px 5px rgba(99,99,99,0.3)">
                 <div style="background-color:blue; color:white; text-align: center;">
                     <h3>Hello, my name is:</h3>
                 </div>
